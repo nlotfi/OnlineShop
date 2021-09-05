@@ -23,5 +23,13 @@ namespace OnlineShop.Web.Data
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
         }
+
+        public DbSet<Product> Products { get; set; }
+    }
+    public class Product
+    {
+        public int Id { get; set; }
+
+        public string Title { get; set; }
     }
 }
